@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to the Dashboard</h1>
+
+    <h2>Students</h2>
+    <ul>
+        {% for student in students %}
+            <li>{{ student }}</li>
+        {% end for %}
+    </ul>
+
+    <h2>Quizzes</h2>
+    <ul>
+        {% for quiz in quizzes %}
+            <li>{{ quiz }}</li>
+        {% end for %}
+    </ul>
+</body>
+</html>
